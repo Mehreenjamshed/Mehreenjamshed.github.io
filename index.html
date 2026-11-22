@@ -1,28 +1,38 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Markhor Dash</title>
-<meta name="description" content="Markhor Dash: Run Pakistan. A family-friendly running game across 51 cities of Pakistan.">
+<title>Mehreen Jamshed</title>
+<meta name="description" content="Mehreen Jamshed: pharmacist, educator and builder of eLearning, AI chatbots and apps.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap">
 <style>
-:root{--bg:#2a1650;--fg:#fff6e6;--yellow:#ffc933;--pink:#e8176f;--teal:#00a99d;--muted:#d8c9ee}
-body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 "Trebuchet MS","Segoe UI",system-ui,sans-serif}
-.strip{height:12px;background:repeating-linear-gradient(45deg,var(--pink) 0 14px,var(--yellow) 14px 28px,var(--teal) 28px 42px)}
-main{max-width:640px;margin:0 auto;padding-block:40px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));text-align:center}
-img{width:132px;height:132px;border-radius:28px;box-shadow:0 8px 0 var(--pink)}
-h1{font-size:44px;line-height:1.05;margin:24px 0 8px;color:var(--yellow);text-wrap:balance}
-p{margin:0 0 14px;color:var(--muted)}
-ul{text-align:left;display:inline-block;margin:8px 0 24px;padding-left:22px}
-.btn{display:inline-block;background:var(--yellow);color:#2a1650;font-weight:700;text-decoration:none;padding:14px 22px;border-radius:10px;box-shadow:0 5px 0 var(--pink);margin:6px}
-footer{margin-top:36px;font-size:14px}footer a{color:var(--yellow)}
-</style></head><body>
-<div class="strip"></div>
-<main>
-<img src="icon.png" alt="Markhor Dash icon">
-<h1>Markhor Dash: Run Pakistan</h1>
-<p>Run as a markhor, Pakistan's national animal, across 51 cities and outrun the leopard!</p>
-<ul>
-<li>Real landmarks: Minar-e-Pakistan, Faisal Mosque, Baltit Fort, Mazar-e-Quaid and more</li>
-<li>Learn the national symbols: markhor, mango, deodar and jasmine</li>
-<li>Family friendly: no chat, no purchases, no forced ads</li>
-</ul><br>
-<a class="btn" href="https://play.google.com/store/apps/details?id=com.markhordash.game">Get it on Google Play</a>
-<footer><a href="privacy/">Privacy policy</a> · Made in Pakistan with love</footer>
+:root{--bg:#f7f4ee;--fg:#1f2a2b;--muted:#5d6a69;--accent:#0f6e64;--card:#fff;--rule:#e3ddd1}
+@media (prefers-color-scheme:dark){:root{--bg:#141b1c;--fg:#eef1ee;--muted:#a3b0ae;--accent:#5fc9b8;--card:#1d2627;--rule:#2c3738;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 Inter,system-ui,sans-serif}
+main{max-width:760px;margin:0 auto;padding-block:56px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.kicker{text-transform:uppercase;letter-spacing:.12em;font-size:13px;color:var(--accent);font-weight:600;margin:0}
+h1{font:600 clamp(38px,8vw,58px)/1.05 Fraunces,Georgia,serif;margin:10px 0 14px;text-wrap:balance}
+.lead{color:var(--muted);max-width:60ch;margin:0}
+h2{font:600 24px/1.2 Fraunces,Georgia,serif;margin:48px 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:18px;min-width:0}
+.card h3{margin:0 0 6px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:15px}
+.app{display:flex;gap:16px;align-items:center;text-decoration:none;color:inherit}
+.app img{width:72px;height:72px;border-radius:16px;flex:none}
+a{color:var(--accent)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);color:var(--muted);font-size:14px}
+</style></head><body><main>
+<p class="kicker">Pharmacist · Educator · Builder</p>
+<h1>Mehreen Jamshed</h1>
+<p class="lead">Licensed pharmacist (PharmD) with a teaching credential. I create healthcare education, eLearning courses, learning platforms, AI chatbots and apps.</p>
+
+<h2>What I do</h2>
+<div class="grid">
+<div class="card"><h3>Healthcare education</h3><p>Clear, accurate medical and pharmacy learning content.</p></div>
+<div class="card"><h3>eLearning &amp; LMS</h3><p>Course design and complete learning platforms.</p></div>
+<div class="card"><h3>AI chatbots</h3><p>Helpful assistants built for your business or classroom.</p></div>
+<div class="card"><h3>Apps &amp; games</h3><p>Friendly apps for families, made in Pakistan.</p></div>
+</div>
+
+<h2>My apps</h2>
+<div class="card"><a class="app" href="markhor-dash/"><img src="markhor-dash/icon.png" alt=""><div><h3>Markhor Dash: Run Pakistan</h3><p>A family running game across 51 cities of Pakistan. <span style="color:var(--accent)">Learn more →</span></p></div></a></div>
+
+<footer>© 2026 Mehreen Jamshed · <a href="markhor-dash/privacy/">Markhor Dash privacy policy</a></footer>
 </main></body></html>
