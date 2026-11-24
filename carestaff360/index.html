@@ -177,11 +177,13 @@ details p{color:var(--soft);font-size:15px;margin-top:10px}
 .close .form-msg b{color:#fff}
 footer{background:#fff;border-top:1px solid var(--line);padding:44px max(5vw,16px) 28px}
 .fcols{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:28px}
+.fcols a.logo{display:flex;color:var(--ink)}
+.fcols .fmail{display:inline-block;margin-top:12px;color:var(--pri);font-weight:500;overflow-wrap:anywhere}
 .fcols h4{margin:0 0 12px;font-size:15px}
 .fcols a{display:block;text-decoration:none;color:var(--soft);font-size:15px;margin-bottom:8px}
 .fcols a:hover{color:var(--pri)}
 .legal{margin-top:28px;padding-top:18px;border-top:1px solid var(--line);color:var(--mute);font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-@media(max-width:960px){.hero .wrap,.blk,.vgrid,.mob,.close{grid-template-columns:minmax(0,1fr)}.blk.rev .txt{order:0}.stats,.who{grid-template-columns:repeat(2,minmax(0,1fr))}.three,.steps{grid-template-columns:minmax(0,1fr)}.links{display:none}.ev1{left:6px}.mini-phone{right:4px;width:110px}.fcols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:960px){.hero .wrap,.blk,.vgrid,.mob,.close{grid-template-columns:minmax(0,1fr)}.blk.rev .txt{order:0}.stats,.who{grid-template-columns:repeat(2,minmax(0,1fr))}.three,.steps{grid-template-columns:minmax(0,1fr)}.links{display:none}.ev1{left:6px}.mini-phone{right:4px;width:110px}.fcols{grid-template-columns:repeat(2,minmax(0,1fr))}.fcols>div:first-child{grid-column:1/-1}}
 @media(max-width:600px){.ps,.faq,.sum,.demo-form{grid-template-columns:minmax(0,1fr)}.who{grid-template-columns:minmax(0,1fr)}.cats a{font-size:14px;padding:8px 12px}.card-ev{font-size:13px;padding:10px 12px}.ev1{top:auto;bottom:-10px}.ev2{display:none}nav .btn{margin-left:auto}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
@@ -367,7 +369,7 @@ footer{background:#fff;border-top:1px solid var(--line);padding:44px max(5vw,16p
 <section class="band" id="book" style="padding-top:0"><div class="wrap close">
   <div style="position:relative;z-index:1">
     <h2>See CareStaff 360 on your own workflow.</h2>
-    <p class="lede">Book a free 30-minute live demo. Or email us directly at <b style="color:#fff">mj.techworld@gmail.com</b>.</p>
+    <p class="lede">Book a free 30-minute live demo. Or email us directly at <a href="mailto:mj.techworld26@gmail.com" style="color:#fff">mj.techworld26@gmail.com</a>.</p>
   </div>
   <form class="demo-form" id="f2" novalidate>
     <input id="f2-name" name="name" placeholder="Your name" autocomplete="name" aria-label="Your name">
@@ -381,7 +383,7 @@ footer{background:#fff;border-top:1px solid var(--line);padding:44px max(5vw,16p
 
 <footer><div class="wrap">
   <div class="fcols">
-    <div><a class="logo" href="#top" style="margin-bottom:12px"><span class="mark">360</span>CareStaff 360</a><p style="color:var(--soft);font-size:15px;max-width:34ch">HR, scheduling, secure messaging and training for care agencies, in one login.</p><p style="margin-top:12px;font-weight:600">mj.techworld@gmail.com</p></div>
+    <div><a class="logo" href="#top" style="margin-bottom:12px"><span class="mark">360</span>CareStaff 360</a><p style="color:var(--soft);font-size:15px;max-width:34ch">HR, scheduling, secure messaging and training for care agencies, in one login.</p><a class="fmail" href="mailto:mj.techworld26@gmail.com">mj.techworld26@gmail.com</a></div>
     <div><h4>Product</h4><a href="#hr">HR &amp; org chart</a><a href="#docs">Documents</a><a href="#sched">Scheduling</a><a href="#chat">Secure messaging</a><a href="#train">Training</a></div>
     <div><h4>Agencies</h4><a href="#who">Home health</a><a href="#who">Healthcare staffing</a><a href="#who">Residential care</a></div>
     <div><h4>Company</h4><a href="#pricing">Pricing</a><a href="#demo">Demo video</a><a href="#faq">FAQ</a><a href="#book">Book a demo</a></div>
@@ -416,7 +418,7 @@ const render=k=>{const d=P[k];bs.setAttribute('aria-pressed',k==='sub');bp.setAt
  plans.innerHTML=d.plans.map(x=>`<div class="plan${x.hot?' hot':''}">${x.hot?'<span class="badge">Most popular</span>':''}<h3>${x.n}</h3><div class="w">${x.w}</div><div class="pr">${x.p} <small>${x.u}</small></div><ul>${x.f.map(f=>`<li>${f}</li>`).join('')}</ul><a class="btn ${x.hot?'pri':'sec'}" href="#book" style="margin-top:auto">Book a demo</a></div>`).join('');
  pnote.textContent=d.note;};
 bs.addEventListener('click',()=>render('sub'));bp.addEventListener('click',()=>render('proj'));render('sub');
-const MAIL='mj.techworld@gmail.com';
+const MAIL='mj.techworld26@gmail.com';
 document.querySelectorAll('.demo-form').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();
  const g=n=>f.elements[n].value.trim(),msg=f.querySelector('.form-msg');
  if(!g('name')||!/^\S+@\S+\.\S+$/.test(g('email'))){msg.textContent='Please add your name and a valid work email.';return;}
